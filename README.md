@@ -38,7 +38,7 @@ Veja `.env.example`.
 ## Contato (placeholder)
 
 - Telefone: (49) 99948-4290 — `tel:+5549999484290`
-- Instagram: [@animapilates](https://instagram.com/animapilates)
+- Instagram: [@aniellepereira_fisio](https://instagram.com/aniellepereira_fisio)
 
 ## Stack
 
