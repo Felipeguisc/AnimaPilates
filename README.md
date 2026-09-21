@@ -37,7 +37,7 @@ Veja `.env.example`.
 
 ## Contato (placeholder)
 
-- Telefone: (49) 99999-9999 — `tel:+5549999999999`
+- Telefone: (49) 99948-4290 — `tel:+5549999484290`
 - Instagram: [@animapilates](https://instagram.com/animapilates)
 
 ## Stack
