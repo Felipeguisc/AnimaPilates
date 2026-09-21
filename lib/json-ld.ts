@@ -9,7 +9,7 @@ export function localBusinessJsonLd() {
     description: site.description,
     url: site.url,
     telephone: site.phoneTel,
-    image: `${site.url}/opengraph-image`,
+    image: `${site.url}/brand/logo-color.png`,
     inLanguage: "pt-BR",
     address: {
       "@type": "PostalAddress",

@@ -13,7 +13,7 @@ export const site = {
   instagramUrl: "https://instagram.com/animapilates",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://127.0.0.1:43127",
   locale: "pt-BR",
-  tagline: "Movimento com presença, no seu ritmo",
+  tagline: "Movimento que transforma",
   description:
     "AnimaPilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: fisioterapia especializada em Pilates, com massagem miofascial e atendimento fisioterapêutico.",
 } as const;

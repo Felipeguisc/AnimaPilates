@@ -49,14 +49,14 @@
 }
 
 :root {
-  --background: oklch(0.97 0.012 85);
-  --foreground: oklch(0.28 0.03 150);
-  --card: oklch(0.99 0.008 85);
-  --card-foreground: oklch(0.28 0.03 150);
-  --popover: oklch(0.99 0.008 85);
-  --popover-foreground: oklch(0.28 0.03 150);
-  --primary: oklch(0.42 0.07 155);
-  --primary-foreground: oklch(0.98 0.01 85);
+  --background: #f4efe6;
+  --foreground: #3d4036;
+  --card: #faf6ee;
+  --card-foreground: #3d4036;
+  --popover: #faf6ee;
+  --popover-foreground: #3d4036;
+  --primary: #545648;
+  --primary-foreground: #f4efe6;
   --secondary: oklch(0.93 0.02 95);
   --secondary-foreground: oklch(0.3 0.03 150);
   --muted: oklch(0.94 0.015 90);

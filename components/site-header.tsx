@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { MenuIcon } from "lucide-react";
 
+import { BrandLogo } from "@/components/brand-logo";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Sheet,
@@ -12,7 +13,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { booking, nav, site, whatsappUrl } from "@/lib/site";
+import { booking, nav, whatsappUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader() {
@@ -20,12 +21,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-md">
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a
-          href="#conteudo"
-          className="font-heading text-xl tracking-tight text-foreground"
-        >
-          {site.name}
+      <div className="mx-auto flex h-[4.5rem] w-full max-w-6xl items-center justify-between gap-4 px-4 sm:h-20 sm:px-6">
+        <a href="#conteudo" className="flex shrink-0 items-center">
+          <BrandLogo
+            priority
+            className="h-12 w-auto max-w-[220px] sm:h-14 sm:max-w-[260px]"
+          />
         </a>
 
         <nav
@@ -67,8 +68,8 @@ export function SiteHeader() {
           </SheetTrigger>
           <SheetContent side="right" className="px-5 py-6">
             <SheetHeader className="px-0">
-              <SheetTitle className="font-heading text-left text-2xl">
-                {site.name}
+              <SheetTitle className="text-left">
+                <BrandLogo className="h-12 w-auto max-w-[220px]" />
               </SheetTitle>
             </SheetHeader>
             <nav aria-label="Menu móvel" className="mt-4 flex flex-col gap-1">

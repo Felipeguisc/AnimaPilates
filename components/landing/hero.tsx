@@ -1,5 +1,6 @@
 import { MapPinIcon } from "lucide-react";
 
+import { BrandLogo } from "@/components/brand-logo";
 import { buttonVariants } from "@/components/ui/button";
 import { booking, site, whatsappUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
@@ -68,25 +69,10 @@ export function Hero() {
         </div>
 
         <aside
-          aria-label="Resumo do estúdio"
-          className="rounded-3xl border border-border bg-card/80 p-7 shadow-sm ring-1 ring-foreground/5"
+          aria-label="Marca Ânima Pilates"
+          className="overflow-hidden rounded-3xl bg-[#545648] shadow-sm ring-1 ring-foreground/10"
         >
-          <p className="font-heading text-2xl">{site.practitioner}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{site.profession}</p>
-          <ul className="mt-6 space-y-3 text-sm leading-relaxed">
-            <li className="border-t border-border pt-3">
-              Pilates com avaliação fisioterapêutica
-            </li>
-            <li className="border-t border-border pt-3">
-              Massagem miofascial para tensões e mobilidade
-            </li>
-            <li className="border-t border-border pt-3">
-              Fisioterapia para dores, lesões e reabilitação
-            </li>
-            <li className="border-t border-border pt-3">
-              Atendimento presencial na {site.street}, {site.city}
-            </li>
-          </ul>
+          <BrandLogo variant="color" className="h-auto w-full" />
         </aside>
       </div>
     </section>
