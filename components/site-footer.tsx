@@ -1,4 +1,7 @@
+import { PhoneIcon } from "lucide-react";
+
 import { BrandLogo } from "@/components/brand-logo";
+import { InstagramIcon } from "@/components/instagram-icon";
 import { fullAddress, mapsUrl, site, telUrl } from "@/lib/site";
 
 export function SiteFooter() {
@@ -22,16 +25,18 @@ export function SiteFooter() {
           </a>
         </div>
         <nav aria-label="Contato no rodapé" className="flex flex-col gap-2 text-sm">
-          <a className="hover:underline" href={telUrl()}>
+          <a className="inline-flex items-center gap-2 hover:underline" href={telUrl()}>
+            <PhoneIcon className="size-4 shrink-0 text-primary" />
             {site.phoneDisplay}
           </a>
           <a
-            className="hover:underline"
+            className="inline-flex items-center gap-2 hover:underline"
             href={site.instagramUrl}
             rel="noopener noreferrer"
             target="_blank"
           >
-            Instagram @{site.instagramHandle}
+            <InstagramIcon className="size-4 shrink-0 text-primary" />
+            @{site.instagramHandle}
           </a>
         </nav>
       </div>
