@@ -2,6 +2,7 @@ export const site = {
   name: "AnimaPilates",
   practitioner: "Anielle Pereira",
   profession: "Fisioterapeuta especializada em Pilates",
+  street: "Rua Fauta Rath, 69",
   city: "Lages",
   region: "Santa Catarina",
   regionCode: "SC",
@@ -14,8 +15,17 @@ export const site = {
   locale: "pt-BR",
   tagline: "Movimento com presença, no seu ritmo",
   description:
-    "AnimaPilates é o estúdio de Anielle Pereira em Lages, SC: fisioterapia especializada em Pilates, com massagem miofascial e atendimento fisioterapêutico.",
+    "AnimaPilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: fisioterapia especializada em Pilates, com massagem miofascial e atendimento fisioterapêutico.",
 } as const;
+
+export function fullAddress() {
+  return `${site.street} — ${site.city}, ${site.regionCode}`;
+}
+
+export function mapsUrl() {
+  const query = `${site.street}, ${site.city}, ${site.region}, Brasil`;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
 
 /** Contact-only until the appointment module exists. Swap href to /agendar later. */
 export const booking = {

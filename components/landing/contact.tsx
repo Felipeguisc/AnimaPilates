@@ -1,7 +1,7 @@
 import { AtSignIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 
 import { buttonVariants } from "@/components/ui/button";
-import { booking, site, telUrl, whatsappUrl } from "@/lib/site";
+import { booking, mapsUrl, site, telUrl, whatsappUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 export function Contact() {
@@ -73,10 +73,17 @@ export function Contact() {
             <li className="flex gap-3">
               <MapPinIcon className="mt-0.5 size-4 shrink-0 text-primary" />
               <div>
-                <p className="font-medium">Onde</p>
-                <p className="text-muted-foreground">
+                <p className="font-medium">Endereço</p>
+                <a
+                  className="text-muted-foreground hover:underline"
+                  href={mapsUrl()}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {site.street}
+                  <br />
                   {site.city}, {site.region}
-                </p>
+                </a>
               </div>
             </li>
           </ul>

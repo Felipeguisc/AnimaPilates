@@ -23,8 +23,8 @@ export function About() {
           <p>
             O {site.name} nasceu da união entre a prática clínica e o Pilates:
             um espaço para cuidar do corpo sem pressa, com técnica e escuta.
-            Anielle Pereira atende presencialmente em {site.city},{" "}
-            {site.region}.
+            Anielle Pereira atende presencialmente na {site.street}, em{" "}
+            {site.city}, {site.region}.
           </p>
           <p>
             Além do Pilates, o estúdio oferece massagem miofascial e

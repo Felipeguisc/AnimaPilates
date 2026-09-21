@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     "AnimaPilates",
     "massagem miofascial Lages",
     "Pilates Santa Catarina",
+    "Rua Fauta Rath",
   ],
   authors: [{ name: site.practitioner }],
   creator: site.practitioner,

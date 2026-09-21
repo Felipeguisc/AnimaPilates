@@ -1,6 +1,6 @@
 # AnimaPilates
 
-Site em português (pt-BR) da **AnimaPilates**, estúdio de **Anielle Pereira**, fisioterapeuta especializada em Pilates em **Lages, Santa Catarina**. Também oferece massagem miofascial e fisioterapia.
+Site em português (pt-BR) da **AnimaPilates**, estúdio de **Anielle Pereira**, fisioterapeuta especializada em Pilates na **Rua Fauta Rath, 69**, em **Lages, Santa Catarina**. Também oferece massagem miofascial e fisioterapia.
 
 Landing page pensada para busca no Google: HTML semântico, metadados, Open Graph, `sitemap.xml`, `robots.txt` e JSON-LD. O agendamento online ainda não existe — os botões levam ao WhatsApp, telefone ou Instagram, prontos para um módulo de consultas no futuro.
 

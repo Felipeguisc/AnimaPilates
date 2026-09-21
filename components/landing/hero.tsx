@@ -84,7 +84,7 @@ export function Hero() {
               Fisioterapia para dores, lesões e reabilitação
             </li>
             <li className="border-t border-border pt-3">
-              Atendimento presencial em {site.city}
+              Atendimento presencial na {site.street}, {site.city}
             </li>
           </ul>
         </aside>

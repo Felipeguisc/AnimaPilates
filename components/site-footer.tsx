@@ -1,4 +1,4 @@
-import { site, telUrl } from "@/lib/site";
+import { fullAddress, mapsUrl, site, telUrl } from "@/lib/site";
 
 export function SiteFooter() {
   return (
@@ -7,8 +7,16 @@ export function SiteFooter() {
         <div>
           <p className="font-heading text-2xl">{site.name}</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            {site.practitioner} · {site.city}, {site.regionCode}
+            {site.practitioner}
           </p>
+          <a
+            className="mt-1 block text-sm text-muted-foreground hover:underline"
+            href={mapsUrl()}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {fullAddress()}
+          </a>
         </div>
         <nav aria-label="Contato no rodapé" className="flex flex-col gap-2 text-sm">
           <a className="hover:underline" href={telUrl()}>

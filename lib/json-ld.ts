@@ -13,6 +13,7 @@ export function localBusinessJsonLd() {
     inLanguage: "pt-BR",
     address: {
       "@type": "PostalAddress",
+      streetAddress: site.street,
       addressLocality: site.city,
       addressRegion: site.regionCode,
       addressCountry: site.country,
