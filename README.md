@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AnimaPilates
 
-## Getting Started
+Site em português (pt-BR) da **AnimaPilates**, estúdio de **Anielle Pereira**, fisioterapeuta especializada em Pilates em **Lages, Santa Catarina**. Também oferece massagem miofascial e fisioterapia.
 
-First, run the development server:
+Landing page pensada para busca no Google: HTML semântico, metadados, Open Graph, `sitemap.xml`, `robots.txt` e JSON-LD. O agendamento online ainda não existe — os botões levam ao WhatsApp, telefone ou Instagram, prontos para um módulo de consultas no futuro.
+
+Não há autenticação nem banco de dados.
+
+## Rodar localmente
+
+Requisitos: Node.js 20+ (o projeto foi gerado com Node 22).
 
 ```bash
+cd ~/Projects/AnimaPilates
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O servidor sobe em [http://127.0.0.1:43127](http://127.0.0.1:43127) (porta fora das comuns 3000, 5173 e 8080).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Para produção local:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## SEO e URL pública
 
-To learn more about Next.js, take a look at the following resources:
+Por padrão, sitemap, robots e Open Graph usam `http://127.0.0.1:43127`. Quando o site for publicado, defina:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+NEXT_PUBLIC_SITE_URL=https://seudominio.com.br
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Veja `.env.example`.
 
-## Deploy on Vercel
+## Contato (placeholder)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Telefone: (49) 99999-9999 — `tel:+5549999999999`
+- Instagram: [@animapilates](https://instagram.com/animapilates)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Stack
+
+Next.js (App Router), TypeScript, Tailwind CSS e shadcn/ui.
