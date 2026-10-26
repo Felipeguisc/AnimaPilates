@@ -9,7 +9,7 @@ const steps = [
   {
     n: "02",
     title: "Avaliação",
-    body: "Anielle observa movimento, histórico e objetivos. É nesse encontro que se define o caminho — Pilates, massagem miofascial, fisioterapia ou a combinação dos três.",
+    body: "Anielle observa movimento, histórico e objetivos. É nesse encontro que se define o caminho — Pilates, fisioterapia, liberação miofascial, massagem ou a combinação deles.",
   },
   {
     n: "03",

@@ -41,8 +41,7 @@ export function SiteFooter() {
         </nav>
       </div>
       <p className="border-t border-border/70 px-4 py-4 text-center text-xs text-muted-foreground">
-        © {new Date().getFullYear()} {site.name}. Fisioterapia e Pilates em{" "}
-        {site.city}, {site.region}.
+        © {new Date().getFullYear()} {site.closing}
       </p>
     </footer>
   );

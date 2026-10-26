@@ -26,7 +26,12 @@ export function localBusinessJsonLd() {
       "@type": "Person",
       name: site.practitioner,
       jobTitle: "Fisioterapeuta",
-      knowsAbout: ["Pilates", "Massagem miofascial", "Fisioterapia"],
+      knowsAbout: [
+        "Pilates",
+        "Fisioterapia",
+        "Liberação miofascial",
+        "Massagem",
+      ],
     },
     employee: {
       "@type": "Person",
@@ -36,24 +41,15 @@ export function localBusinessJsonLd() {
     sameAs: [site.instagramUrl],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Serviços AnimaPilates",
+      name: `Serviços ${site.name}`,
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Pilates com olhar clínico",
+            name: "Pilates",
             description:
-              "Sessões de Pilates conduzidas por fisioterapeuta em Lages, SC.",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: "Massagem miofascial",
-            description:
-              "Trabalho nas fáscias para aliviar tensões e ganhar mobilidade.",
+              "O Pilates é um método de exercícios que trabalha força, flexibilidade, equilíbrio, postura, coordenação e consciência corporal. Com exercícios adaptados às necessidades de cada aluno, promove mais mobilidade, estabilidade e qualidade de vida.",
           },
         },
         {
@@ -62,7 +58,25 @@ export function localBusinessJsonLd() {
             "@type": "Service",
             name: "Fisioterapia",
             description:
-              "Avaliação e tratamento de dores, lesões e limitações funcionais.",
+              "A fisioterapia atua na prevenção e no tratamento de disfunções, dores e limitações do movimento. Por meio de uma avaliação individualizada e de técnicas específicas, buscamos recuperar a funcionalidade, melhorar a mobilidade e favorecer uma rotina com mais autonomia e bem-estar.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Liberação miofascial",
+            description:
+              "A liberação miofascial é uma técnica manual que atua sobre os tecidos que envolvem os músculos, ajudando a aliviar tensões, melhorar a mobilidade e reduzir a sensação de rigidez muscular. É uma opção para quem busca mais conforto corporal e liberdade de movimento.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Massagem",
+            description:
+              "A massagem é uma prática de cuidado que proporciona relaxamento, alívio das tensões musculares e sensação de bem-estar. Por meio de manobras específicas, contribui para diminuir o estresse do dia a dia e promover momentos de descanso e autocuidado.",
           },
         },
       ],

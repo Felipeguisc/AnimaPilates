@@ -1,6 +1,7 @@
 import {
   ActivityIcon,
   HandHeartIcon,
+  LayersIcon,
   PersonStandingIcon,
 } from "lucide-react";
 
@@ -14,21 +15,27 @@ import {
 const services = [
   {
     icon: PersonStandingIcon,
-    title: "Pilates com olhar clínico",
+    title: "Pilates",
     description:
-      "Sessões de Pilates conduzidas por fisioterapeuta, ajustadas à sua história: coluna, joelho, ombro, pós-operatório ou o desejo de se mover com mais segurança.",
-  },
-  {
-    icon: HandHeartIcon,
-    title: "Massagem miofascial",
-    description:
-      "Trabalho nas fáscias para soltar tensões, ganhar amplitude e preparar o corpo para o movimento do dia a dia e das sessões de Pilates.",
+      "O Pilates é um método de exercícios que trabalha força, flexibilidade, equilíbrio, postura, coordenação e consciência corporal. Com exercícios adaptados às necessidades de cada aluno, promove mais mobilidade, estabilidade e qualidade de vida.",
   },
   {
     icon: ActivityIcon,
     title: "Fisioterapia",
     description:
-      "Avaliação e tratamento de dores, lesões e limitações funcionais, com plano claro, progressão honesta e acompanhamento próximo em Lages.",
+      "A fisioterapia atua na prevenção e no tratamento de disfunções, dores e limitações do movimento. Por meio de uma avaliação individualizada e de técnicas específicas, buscamos recuperar a funcionalidade, melhorar a mobilidade e favorecer uma rotina com mais autonomia e bem-estar.",
+  },
+  {
+    icon: LayersIcon,
+    title: "Liberação miofascial",
+    description:
+      "A liberação miofascial é uma técnica manual que atua sobre os tecidos que envolvem os músculos, ajudando a aliviar tensões, melhorar a mobilidade e reduzir a sensação de rigidez muscular. É uma opção para quem busca mais conforto corporal e liberdade de movimento.",
+  },
+  {
+    icon: HandHeartIcon,
+    title: "Massagem",
+    description:
+      "A massagem é uma prática de cuidado que proporciona relaxamento, alívio das tensões musculares e sensação de bem-estar. Por meio de manobras específicas, contribui para diminuir o estresse do dia a dia e promover momentos de descanso e autocuidado.",
   },
 ];
 
@@ -47,14 +54,9 @@ export function Services() {
           id="servicos-heading"
           className="font-heading mt-2 max-w-xl text-3xl text-balance sm:text-4xl"
         >
-          Cuidado que combina força, alívio e consciência corporal
+          Pilates, fisioterapia, liberação miofascial e massagem
         </h2>
-        <p className="mt-4 max-w-2xl text-muted-foreground">
-          Anielle atende quem precisa reabilitar, prevenir ou simplesmente
-          voltar a se sentir em casa no próprio corpo. Os três caminhos
-          abaixo podem ser combinados no mesmo plano.
-        </p>
-        <div className="mt-10 grid gap-5 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {services.map((service) => (
             <Card key={service.title} className="bg-card">
               <CardHeader>

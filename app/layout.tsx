@@ -22,8 +22,8 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "AnimaPilates | Fisioterapia e Pilates em Lages, SC",
-    template: "%s | AnimaPilates",
+    default: `${site.name} | Fisioterapia e Pilates em Lages, SC`,
+    template: `%s | ${site.name}`,
   },
   description: site.description,
   applicationName: site.name,
@@ -31,8 +31,9 @@ export const metadata: Metadata = {
     "Pilates Lages",
     "fisioterapia Lages",
     "Anielle Pereira",
-    "AnimaPilates",
-    "massagem miofascial Lages",
+    "Ânima Pilates",
+    "liberação miofascial Lages",
+    "massagem Lages",
     "Pilates Santa Catarina",
     "Rua Fauta Rath",
   ],
@@ -55,12 +56,12 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     url: "/",
     siteName: site.name,
-    title: "AnimaPilates | Fisioterapia e Pilates em Lages, SC",
+    title: `${site.name} | Fisioterapia e Pilates em Lages, SC`,
     description: site.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "AnimaPilates | Fisioterapia e Pilates em Lages, SC",
+    title: `${site.name} | Fisioterapia e Pilates em Lages, SC`,
     description: site.description,
   },
   robots: {

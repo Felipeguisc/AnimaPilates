@@ -21,20 +21,14 @@ export function About() {
         </div>
         <div className="space-y-4 text-base leading-relaxed text-muted-foreground">
           <p>
-            O {site.name} nasceu da união entre a prática clínica e o Pilates:
-            um espaço para cuidar do corpo sem pressa, com técnica e escuta.
-            Anielle Pereira atende presencialmente na {site.street}, em{" "}
+            No Ânima Pilates, acreditamos que cada pessoa merece um cuidado
+            individualizado, respeitando suas necessidades e seus objetivos.
+            Oferecemos serviços voltados à saúde, ao bem-estar, à prevenção e
+            à recuperação funcional, sempre com atenção e acolhimento.
+          </p>
+          <p>
+            {site.practitioner} atende presencialmente na {site.street}, em{" "}
             {site.city}, {site.region}.
-          </p>
-          <p>
-            Além do Pilates, o estúdio oferece massagem miofascial e
-            fisioterapia para quem chega com dor, rigidez, uma lesão recente
-            ou a vontade de se fortalecer com acompanhamento profissional.
-          </p>
-          <p>
-            Cada sessão parte do que o seu corpo pede naquele dia — não de um
-            protocolo genérico. O objetivo é que você saia com mais clareza,
-            estabilidade e confiança para o movimento.
           </p>
         </div>
       </div>

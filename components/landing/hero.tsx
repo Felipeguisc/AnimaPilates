@@ -25,13 +25,10 @@ export function Hero() {
             id="hero-heading"
             className="font-heading mt-4 max-w-xl text-4xl leading-[1.1] text-balance sm:text-5xl lg:text-6xl"
           >
-            {site.tagline}
+            {site.name}
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-            {site.name} é o espaço de {site.practitioner}, fisioterapeuta
-            especializada em Pilates. Em Lages, Santa Catarina, o atendimento
-            une técnica clínica e cuidado próximo — com Pilates, massagem
-            miofascial e fisioterapia.
+            {site.tagline}
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a

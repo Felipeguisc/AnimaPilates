@@ -1,5 +1,5 @@
 export const site = {
-  name: "AnimaPilates",
+  name: "Ânima Pilates",
   practitioner: "Anielle Pereira",
   profession: "Fisioterapeuta especializada em Pilates",
   street: "Rua Fauta Rath, 69",
@@ -13,9 +13,10 @@ export const site = {
   instagramUrl: "https://instagram.com/aniellepereira_fisio",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://127.0.0.1:43127",
   locale: "pt-BR",
-  tagline: "Movimento que transforma",
+  tagline: "Movimento, cuidado e qualidade de vida.",
+  closing: "Ânima Pilates — transformando vidas através do movimento.",
   description:
-    "AnimaPilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: fisioterapia especializada em Pilates, com massagem miofascial e atendimento fisioterapêutico.",
+    "Ânima Pilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: Pilates, fisioterapia, liberação miofascial e massagem. Movimento, cuidado e qualidade de vida.",
 } as const;
 
 export function fullAddress() {
@@ -46,7 +47,7 @@ export const nav = [
 export function whatsappUrl(message?: string) {
   const text = encodeURIComponent(
     message ??
-      "Olá, Anielle! Vim pelo site da AnimaPilates e gostaria de saber mais sobre uma avaliação.",
+      "Olá, Anielle! Vim pelo site da Ânima Pilates e gostaria de saber mais sobre uma avaliação.",
   );
   return `https://wa.me/${site.phoneTel.replace("+", "")}?text=${text}`;
 }

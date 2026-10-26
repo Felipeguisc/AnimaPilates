@@ -32,7 +32,7 @@ export function Proof() {
           </p>
           <a
             href={whatsappUrl(
-              "Olá, Anielle! Gostaria de conhecer o AnimaPilates e tirar dúvidas antes de agendar.",
+              "Olá, Anielle! Gostaria de conhecer o Ânima Pilates e tirar dúvidas.",
             )}
             className={cn(buttonVariants({ size: "lg" }), "mt-6 h-11 px-5")}
           >
