@@ -1,7 +1,8 @@
 import { MapPinIcon } from "lucide-react";
 
-import { BrandLogo } from "@/components/brand-logo";
+import { StudioPhoto } from "@/components/studio-photo";
 import { buttonVariants } from "@/components/ui/button";
+import { photos } from "@/lib/photos";
 import { booking, site, whatsappUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
@@ -65,12 +66,14 @@ export function Hero() {
           </p>
         </div>
 
-        <aside
-          aria-label="Marca Ânima Pilates"
-          className="overflow-hidden rounded-3xl bg-[#545648] shadow-sm ring-1 ring-foreground/10"
-        >
-          <BrandLogo variant="color" className="h-auto w-full" />
-        </aside>
+        <StudioPhoto
+          src={photos.retrato.src}
+          alt={photos.retrato.alt}
+          priority
+          sizes="(max-width: 1024px) 100vw, 42vw"
+          className="aspect-[3/4] w-full"
+          imageClassName="object-[center_78%]"
+        />
       </div>
     </section>
   );

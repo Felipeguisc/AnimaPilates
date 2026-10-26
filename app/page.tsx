@@ -4,6 +4,7 @@ import { Hero } from "@/components/landing/hero";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Proof } from "@/components/landing/proof";
 import { Services } from "@/components/landing/services";
+import { Space } from "@/components/landing/space";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
+        <Space />
         <HowItWorks />
         <Proof />
         <Contact />

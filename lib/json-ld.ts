@@ -1,3 +1,4 @@
+import { photoPublicPaths } from "@/lib/photos";
 import { site } from "@/lib/site";
 
 export function localBusinessJsonLd() {
@@ -9,7 +10,12 @@ export function localBusinessJsonLd() {
     description: site.description,
     url: site.url,
     telephone: site.phoneTel,
-    image: `${site.url}/brand/logo-color.png`,
+    image: [
+      `${site.url}${photoPublicPaths.retrato}`,
+      `${site.url}${photoPublicPaths.cadillac}`,
+      `${site.url}${photoPublicPaths.visaoGeral}`,
+      `${site.url}/brand/logo-color.png`,
+    ],
     inLanguage: "pt-BR",
     address: {
       "@type": "PostalAddress",

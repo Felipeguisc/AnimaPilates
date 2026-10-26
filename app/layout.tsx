@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from "next/font/google";
 
 import { JsonLd } from "@/components/json-ld";
+import { photoPublicPaths } from "@/lib/photos";
 import { site } from "@/lib/site";
 
 import "./globals.css";
@@ -58,11 +59,20 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: `${site.name} | Fisioterapia e Pilates em Lages, SC`,
     description: site.description,
+    images: [
+      {
+        url: photoPublicPaths.retrato,
+        width: 1200,
+        height: 1800,
+        alt: "Anielle Pereira, fisioterapeuta do Ânima Pilates, ajoelhada no estúdio em Lages, de óculos e segurando um magic circle.",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${site.name} | Fisioterapia e Pilates em Lages, SC`,
     description: site.description,
+    images: [photoPublicPaths.retrato],
   },
   robots: {
     index: true,

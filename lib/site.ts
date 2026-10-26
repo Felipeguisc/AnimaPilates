@@ -39,6 +39,7 @@ export const booking = {
 export const nav = [
   { href: "#servicos", label: "Serviços" },
   { href: "#sobre", label: "Sobre" },
+  { href: "#espaco", label: "O espaço" },
   { href: "#como-funciona", label: "Como funciona" },
   { href: "#depoimentos", label: "Depoimentos" },
   { href: "#contato", label: "Contato" },

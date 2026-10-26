@@ -31,7 +31,7 @@ export function SiteHeader() {
 
         <nav
           aria-label="Seções da página"
-          className="hidden items-center gap-7 md:flex"
+          className="hidden items-center gap-5 lg:gap-7 md:flex"
         >
           {nav.map((item) => (
             <a

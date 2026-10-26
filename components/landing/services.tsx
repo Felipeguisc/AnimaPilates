@@ -5,12 +5,14 @@ import {
   PersonStandingIcon,
 } from "lucide-react";
 
+import { StudioPhoto } from "@/components/studio-photo";
 import {
   Card,
   CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { photos } from "@/lib/photos";
 
 const services = [
   {
@@ -47,15 +49,26 @@ export function Services() {
       className="scroll-mt-20 border-b border-border"
     >
       <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
-        <p className="text-sm font-medium tracking-wide text-primary uppercase">
-          Serviços
-        </p>
-        <h2
-          id="servicos-heading"
-          className="font-heading mt-2 max-w-xl text-3xl text-balance sm:text-4xl"
-        >
-          Pilates, fisioterapia, liberação miofascial e massagem
-        </h2>
+        <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p className="text-sm font-medium tracking-wide text-primary uppercase">
+              Serviços
+            </p>
+            <h2
+              id="servicos-heading"
+              className="font-heading mt-2 max-w-xl text-3xl text-balance sm:text-4xl"
+            >
+              Pilates, fisioterapia, liberação miofascial e massagem
+            </h2>
+          </div>
+          <StudioPhoto
+            src={photos.barril.src}
+            alt={photos.barril.alt}
+            sizes="(max-width: 1024px) 100vw, 45vw"
+            className="aspect-[3/4] w-full"
+            imageClassName="object-[center_55%]"
+          />
+        </div>
         <div className="mt-10 grid gap-5 sm:grid-cols-2">
           {services.map((service) => (
             <Card key={service.title} className="bg-card">
