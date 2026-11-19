@@ -16,7 +16,12 @@ export const site = {
   tagline: "Movimento, cuidado e qualidade de vida.",
   closing: "Ânima Pilates — transformando vidas através do movimento.",
   description:
-    "Ânima Pilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: Pilates, fisioterapia, liberação miofascial e massagem. Movimento, cuidado e qualidade de vida.",
+    "Ânima Pilates é o estúdio de Anielle Pereira na Rua Fauta Rath, 69, em Lages, SC: Pilates, fisioterapia, liberação miofascial e massagem, no estúdio e em atendimento a domicílio. Movimento, cuidado e qualidade de vida.",
+  about:
+    "No Ânima Pilates, acreditamos que cada pessoa merece um cuidado individualizado, respeitando suas necessidades e seus objetivos. Oferecemos serviços voltados à saúde, ao bem-estar, à prevenção e à recuperação funcional, no estúdio e em atendimento a domicílio, sempre com atenção e acolhimento.",
+  homeVisitTitle: "Atendimento a domicílio",
+  homeVisit:
+    "Também oferecemos atendimento a domicílio em Lages, para quem prefere receber o cuidado em casa.",
 } as const;
 
 export function fullAddress() {

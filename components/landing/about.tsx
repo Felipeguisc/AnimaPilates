@@ -28,12 +28,7 @@ export function About() {
             {site.practitioner}, fisioterapeuta em {site.city}
           </h2>
           <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
-            <p>
-              No Ânima Pilates, acreditamos que cada pessoa merece um cuidado
-              individualizado, respeitando suas necessidades e seus objetivos.
-              Oferecemos serviços voltados à saúde, ao bem-estar, à prevenção e
-              à recuperação funcional, sempre com atenção e acolhimento.
-            </p>
+            <p>{site.about}</p>
             <p>
               {site.practitioner} atende presencialmente na {site.street}, em{" "}
               {site.city}, {site.region}.

@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     "liberação miofascial Lages",
     "massagem Lages",
     "Pilates Santa Catarina",
+    "atendimento a domicílio Lages",
+    "Pilates a domicílio Lages",
     "Rua Fauta Rath",
   ],
   authors: [{ name: site.practitioner }],

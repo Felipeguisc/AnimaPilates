@@ -37,6 +37,7 @@ export function localBusinessJsonLd() {
         "Fisioterapia",
         "Liberação miofascial",
         "Massagem",
+        "Atendimento a domicílio",
       ],
     },
     employee: {
@@ -45,6 +46,13 @@ export function localBusinessJsonLd() {
       jobTitle: "Fisioterapeuta",
     },
     sameAs: [site.instagramUrl],
+    serviceType: [
+      "Pilates",
+      "Fisioterapia",
+      "Liberação miofascial",
+      "Massagem",
+      "Atendimento a domicílio",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: `Serviços ${site.name}`,
@@ -83,6 +91,18 @@ export function localBusinessJsonLd() {
             name: "Massagem",
             description:
               "A massagem é uma prática de cuidado que proporciona relaxamento, alívio das tensões musculares e sensação de bem-estar. Por meio de manobras específicas, contribui para diminuir o estresse do dia a dia e promover momentos de descanso e autocuidado.",
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: site.homeVisitTitle,
+            description: site.homeVisit,
+            areaServed: {
+              "@type": "City",
+              name: `${site.city}, ${site.regionCode}`,
+            },
           },
         },
       ],

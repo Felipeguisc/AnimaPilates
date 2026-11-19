@@ -1,6 +1,7 @@
 import { About } from "@/components/landing/about";
 import { Contact } from "@/components/landing/contact";
 import { Hero } from "@/components/landing/hero";
+import { HomeVisit } from "@/components/landing/home-visit";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Proof } from "@/components/landing/proof";
 import { Services } from "@/components/landing/services";
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <Services />
         <About />
+        <HomeVisit />
         <Space />
         <HowItWorks />
         <Proof />
